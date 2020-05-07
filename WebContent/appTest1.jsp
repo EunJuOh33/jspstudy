@@ -12,11 +12,13 @@
 	서블릿 정보 : <%=application.getServerInfo() %><hr/>
 	<%
 		String path = application.getRearlPath("/");
+		URL url = application.getResource("/");
 	%>
 	real Path: <%=path %><hr/>
 	URL 정보 : <%=applifation.getResour %>
 	파일 정보 : <%=application.getMimeType(File(path + "appTest1.jsp") %>
-	URL 정보 : <%=applifation.getResour("/") %>
-	파일 정보 : <%=application.getMimeType("c:/tomcat9/BUILDING.txt") %>
+<!--	URL 정보 : <%=applifation.getResour("/") %>
+		파일 정보 : <%=application.getMimeType("c:/tomcat9/BUILDING.txt") %>
+-->	
 </body>
 </html>
